@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Chat</string>
+    <string name="dummy_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="double_check_txt">✔✔</string>
+    <string name="type_here">type here</string>
+
+</resources>
