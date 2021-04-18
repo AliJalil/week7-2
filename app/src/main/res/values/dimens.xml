@@ -13,6 +13,10 @@
     <dimen name="check_mrk_size">15dp</dimen>
     <dimen name="extra_end_padding">8dp</dimen>
     <dimen name="radius">20dp</dimen>
+    <dimen name="chat_img_width">20dp</dimen>
+    <dimen name="chat_img_margin">16dp</dimen>
+    <dimen name="chat_txt_horizontal_margin">32dp</dimen>
+    <dimen name="chat_txt_vertical_margin">10dp</dimen>
 
 
 </resources>
