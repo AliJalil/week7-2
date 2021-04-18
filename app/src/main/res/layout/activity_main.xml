@@ -234,7 +234,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/chat_edit_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/chat_txt_horizontal_margin"
@@ -244,10 +244,10 @@
             android:background="@drawable/fully_rounded_view_gray"
             android:gravity="start"
             android:hint="@string/type_here"
-            android:inputType="textPersonName"
-            android:paddingStart="40dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:paddingStart="@dimen/edit_txt_padding_start"
+            android:paddingEnd="@dimen/edit_txt_padding_start"
+            android:paddingTop="@dimen/edit_txt_padding_vertical"
+            android:paddingBottom="@dimen/edit_txt_padding_vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -258,9 +258,9 @@
             android:layout_width="@dimen/chat_img_width"
             android:layout_height="@dimen/chat_img_width"
             android:layout_marginStart="@dimen/chat_img_margin"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
+            app:layout_constraintStart_toStartOf="@+id/chat_edit_txt"
+            app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
             app:srcCompat="@drawable/_1" />
 
         <ImageView
@@ -268,9 +268,9 @@
             android:layout_width="@dimen/chat_img_width"
             android:layout_height="@dimen/chat_img_width"
             android:layout_marginEnd="@dimen/chat_img_margin"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
+            app:layout_constraintEnd_toEndOf="@+id/chat_edit_txt"
+            app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
             app:srcCompat="@drawable/_3" />
 
         <ImageView
@@ -278,9 +278,9 @@
             android:layout_width="@dimen/chat_img_width"
             android:layout_height="@dimen/chat_img_width"
             android:layout_marginEnd="@dimen/chat_img_margin"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
             app:layout_constraintEnd_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
             app:srcCompat="@drawable/_2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
