@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="right|bottom">
+    android:gravity="end|bottom">
 
     <LinearLayout
         android:id="@+id/cont1"
@@ -15,7 +15,8 @@
         android:layout_marginTop="@dimen/container_margin_top"
         android:layout_marginEnd="@dimen/container_margin_end"
         android:orientation="vertical"
-        android:gravity="right"
+        android:gravity="end"
+
         >
 
         <TextView
@@ -39,14 +40,15 @@
             android:layout_height="@dimen/check_mrk_size"
             android:layout_marginEnd="@dimen/extra_end_padding"
             android:src="@drawable/ic_outline_done_all_24"
-            android:layout_marginTop="check_mark_margin_top"
-            app:tint="@color/white" />
+            android:layout_marginTop="@dimen/check_mark_margin_top"
+            app:tint="@color/white"
+            android:contentDescription="TODO" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/extra_end_padding"
-            android:text="3:22"
+            android:text="@string/_3_22"
             android:textColor="@color/teal_700"
             android:textSize="@dimen/check_mark_txt_size"
             android:layout_marginTop="10dp"/>
@@ -59,7 +61,7 @@
         android:layout_marginTop="@dimen/container_margin_top"
         android:layout_marginEnd="@dimen/container_margin_end"
         android:orientation="vertical"
-        android:gravity="right"
+        android:gravity="end"
         >
 
         <TextView
@@ -83,15 +85,16 @@
             android:layout_height="@dimen/check_mrk_size"
             android:layout_marginEnd="@dimen/extra_end_padding"
             android:src="@drawable/ic_outline_done_all_24"
-            android:layout_marginTop="check_mark_margin_top"
-            app:tint="@color/white" />
+            android:layout_marginTop="@dimen/check_mark_margin_top"
+            app:tint="@color/white"
+            android:contentDescription="TODO" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="@dimen/extra_end_padding"
-            android:text="5:22"
+            android:text="@string/_5_22"
             android:textColor="@color/teal_700"
             android:textSize="@dimen/check_mark_txt_size" />
     </LinearLayout>
@@ -103,7 +106,7 @@
         android:layout_marginTop="@dimen/container_margin_top"
         android:layout_marginStart="@dimen/container_margin_end"
         android:orientation="vertical"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
         >
 
         <TextView
@@ -128,14 +131,15 @@
             android:layout_height="@dimen/check_mrk_size"
             android:layout_marginEnd="@dimen/extra_end_padding"
             android:src="@drawable/ic_outline_done_all_24"
-            android:layout_marginTop="check_mark_margin_top"
-            app:tint="@color/white" />
+            android:layout_marginTop="@dimen/check_mark_margin_top"
+            app:tint="@color/white"
+            android:contentDescription="TODO" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/extra_end_padding"
-            android:text="6:22"
+            android:text="@string/_6_22"
             android:textColor="@color/teal_700"
             android:textSize="@dimen/check_mark_txt_size"
             android:layout_marginTop="10dp"/>
@@ -148,7 +152,7 @@
         android:layout_marginTop="@dimen/container_margin_top"
         android:layout_marginEnd="@dimen/container_margin_end"
         android:orientation="vertical"
-        android:gravity="right"
+        android:gravity="end"
         >
 
         <TextView
@@ -170,21 +174,22 @@
         <ImageView
             android:layout_width="@dimen/check_mrk_size"
             android:layout_height="@dimen/check_mrk_size"
-            android:layout_marginTop="check_mark_margin_top"
+            android:layout_marginTop="@dimen/check_mark_margin_top"
             android:layout_marginEnd="@dimen/extra_end_padding"
             android:src="@drawable/ic_outline_done_all_24"
-            app:tint="@color/white" />
+            app:tint="@color/white"
+            android:contentDescription="TODO" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/extra_end_padding"
-            android:text="6:22"
+            android:text="@string/_6_22"
             android:textColor="@color/teal_700"
             android:textSize="@dimen/check_mark_txt_size"
             android:layout_marginTop="10dp"/>
     </LinearLayout>
-
+   
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cont5"
         android:layout_width="match_parent"
@@ -192,8 +197,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_gravity="bottom"
-        >
+        android:layout_gravity="bottom">
 
         <EditText
             android:id="@+id/chat_edit_txt"
@@ -213,7 +217,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints=""
+            android:inputType="text" />
 
         <ImageView
             android:id="@+id/sticker_icon"
@@ -223,7 +229,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
             app:layout_constraintStart_toStartOf="@+id/chat_edit_txt"
             app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
-            app:srcCompat="@drawable/_1" />
+            app:srcCompat="@drawable/_1"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/mic_icon"
@@ -233,7 +240,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
             app:layout_constraintEnd_toEndOf="@+id/chat_edit_txt"
             app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
-            app:srcCompat="@drawable/_3" />
+            app:srcCompat="@drawable/_3"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/attach_icon"
@@ -243,7 +251,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
             app:layout_constraintEnd_toStartOf="@+id/mic_icon"
             app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
-            app:srcCompat="@drawable/_2" />
+            app:srcCompat="@drawable/_2"
+            android:contentDescription="TODO" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

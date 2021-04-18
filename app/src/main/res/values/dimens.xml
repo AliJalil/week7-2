@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="tv_padding">10dp</dimen>
+    <dimen name="tv_padding">15dp</dimen>
     <dimen name="tv_bottom_padding">20dp</dimen>
 
     <dimen name="chat_txt_size">15sp</dimen>
     <dimen name="check_mark_txt_size">10sp</dimen>
-    <dimen name="check_mark_margin_top">-15dp</dimen>
+    <dimen name="check_mark_margin_top"> -15dp </dimen>
 
     <dimen name="time_txt_size">5sp</dimen>
     <dimen name="container_margin_top">8dp</dimen>
@@ -13,7 +13,7 @@
     <dimen name="container_margin_end">16dp</dimen>
     <dimen name="check_mrk_size">15dp</dimen>
     <dimen name="extra_end_padding">8dp</dimen>
-    <dimen name="radius">20dp</dimen>
+    <dimen name="radius">50dp</dimen>
     <dimen name="chat_img_width">20dp</dimen>
     <dimen name="chat_img_margin">16dp</dimen>
     <dimen name="chat_txt_horizontal_margin">32dp</dimen>
