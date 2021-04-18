@@ -254,7 +254,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/sticker_icon"
             android:layout_width="@dimen/chat_img_width"
             android:layout_height="@dimen/chat_img_width"
             android:layout_marginStart="@dimen/chat_img_margin"
@@ -264,7 +264,7 @@
             app:srcCompat="@drawable/_1" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/mic_icon"
             android:layout_width="@dimen/chat_img_width"
             android:layout_height="@dimen/chat_img_width"
             android:layout_marginEnd="@dimen/chat_img_margin"
@@ -274,12 +274,12 @@
             app:srcCompat="@drawable/_3" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/attach_icon"
             android:layout_width="@dimen/chat_img_width"
             android:layout_height="@dimen/chat_img_width"
             android:layout_marginEnd="@dimen/chat_img_margin"
             app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/mic_icon"
             app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
             app:srcCompat="@drawable/_2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
