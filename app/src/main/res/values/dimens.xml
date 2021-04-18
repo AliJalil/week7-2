@@ -5,6 +5,7 @@
 
     <dimen name="chat_txt_size">15sp</dimen>
     <dimen name="check_mark_txt_size">10sp</dimen>
+    <dimen name="check_mark_margin_top">-15dp</dimen>
 
     <dimen name="time_txt_size">5sp</dimen>
     <dimen name="container_margin_top">8dp</dimen>
@@ -18,6 +19,7 @@
     <dimen name="chat_txt_horizontal_margin">32dp</dimen>
     <dimen name="chat_txt_vertical_margin">10dp</dimen>
     <dimen name="edit_txt_padding_start">40dp</dimen>
+
     <dimen name="edit_txt_padding_vertical">10dp</dimen>
 
 
