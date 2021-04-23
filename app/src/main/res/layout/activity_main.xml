@@ -4,257 +4,233 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:gravity="end|bottom"
     android:orientation="vertical"
-    android:gravity="end|bottom">
+    android:paddingStart="@dimen/container_margin_end"
+    android:paddingEnd="@dimen/container_margin_end"
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/cont1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/container_margin_top"
-        android:layout_marginEnd="@dimen/container_margin_end"
-        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:gravity="end"
-
-        >
-
-        <TextView
-            android:id="@+id/tv0"
-            android:layout_width="@dimen/container_width"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corner_view"
-
-            android:maxLines="4"
-            android:paddingLeft="@dimen/tv_padding"
-            android:paddingTop="@dimen/tv_padding"
-            android:paddingRight="@dimen/tv_padding"
-            android:paddingBottom="@dimen/tv_bottom_padding"
-
-            android:text="@string/dummy_txt"
-            android:textColor="@color/txt_color_white"
-            android:textSize="@dimen/chat_txt_size" />
-
-        <ImageView
-            android:layout_width="@dimen/check_mrk_size"
-            android:layout_height="@dimen/check_mrk_size"
-            android:layout_marginEnd="@dimen/extra_end_padding"
-            android:src="@drawable/ic_outline_done_all_24"
-            android:layout_marginTop="@dimen/check_mark_margin_top"
-            app:tint="@color/white"
-            android:contentDescription="TODO" />
-
-        <TextView
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+        <LinearLayout
+            android:id="@+id/cont1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/extra_end_padding"
-            android:text="@string/_3_22"
-            android:textColor="@color/teal_700"
-            android:textSize="@dimen/check_mark_txt_size"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="@dimen/container_margin_top"
+            android:layout_marginEnd="@dimen/container_margin_end"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_view"
+                android:paddingLeft="@dimen/tv_padding"
+                android:paddingTop="@dimen/tv_padding"
+                android:paddingRight="@dimen/tv_padding"
+                android:paddingBottom="@dimen/tv_bottom_padding"
+                android:text="@string/hi_leo"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/chat_txt_size" />
+
+            <ImageView
+                android:layout_width="@dimen/check_mrk_size"
+                android:layout_height="@dimen/check_mrk_size"
+                android:layout_marginTop="@dimen/check_mark_margin_top"
+                android:layout_marginEnd="@dimen/extra_end_padding"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_outline_done_all_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/extra_end_padding"
+                android:text="@string/_3_22"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/check_mark_txt_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cont2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/container_margin_top"
+            android:layout_marginEnd="@dimen/container_margin_end"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_view"
+
+                android:maxLines="4"
+                android:paddingLeft="@dimen/tv_padding"
+                android:paddingTop="@dimen/tv_padding"
+                android:paddingRight="@dimen/tv_padding"
+                android:paddingBottom="@dimen/tv_bottom_padding"
+
+                android:text="@string/simple"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/chat_txt_size" />
+
+            <ImageView
+                android:layout_width="@dimen/check_mrk_size"
+                android:layout_height="@dimen/check_mrk_size"
+                android:layout_marginTop="@dimen/check_mark_margin_top"
+                android:layout_marginEnd="@dimen/extra_end_padding"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_outline_done_all_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/extra_end_padding"
+                android:text="@string/_5_22"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/check_mark_txt_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cont3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+
+            android:layout_marginTop="@dimen/container_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_view_white"
+                android:maxLines="4"
+                android:paddingLeft="@dimen/tv_padding"
+                android:paddingTop="@dimen/tv_padding"
+                android:paddingRight="@dimen/tv_padding"
+                android:paddingBottom="@dimen/tv_bottom_padding"
+                android:text="@string/ok_"
+                android:textColor="@color/txt_color_black"
+                android:textSize="@dimen/chat_txt_size" />
+
+            <ImageView
+                android:layout_width="@dimen/check_mrk_size"
+                android:layout_height="@dimen/check_mrk_size"
+                android:layout_marginTop="@dimen/check_mark_margin_top"
+                android:layout_marginEnd="@dimen/extra_end_padding"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_outline_done_all_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/extra_end_padding"
+                android:text="@string/_6_22"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/check_mark_txt_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cont4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/container_margin_top"
+            android:layout_marginEnd="@dimen/container_margin_end"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_view"
+                android:paddingLeft="@dimen/tv_padding"
+                android:paddingTop="@dimen/tv_padding"
+                android:paddingRight="@dimen/tv_padding"
+                android:paddingBottom="@dimen/tv_bottom_padding"
+
+                android:text="@string/oh_"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/chat_txt_size" />
+
+            <ImageView
+                android:layout_width="@dimen/check_mrk_size"
+                android:layout_height="@dimen/check_mrk_size"
+                android:layout_marginTop="@dimen/check_mark_margin_top"
+                android:layout_marginEnd="@dimen/extra_end_padding"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_outline_done_all_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/extra_end_padding"
+                android:text="@string/_6_22"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/check_mark_txt_size" />
+        </LinearLayout>
     </LinearLayout>
+
 
     <LinearLayout
-        android:id="@+id/cont2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/container_margin_top"
-        android:layout_marginEnd="@dimen/container_margin_end"
-        android:orientation="vertical"
-        android:gravity="end"
-        >
-
-        <TextView
-            android:id="@+id/tv1"
-            android:layout_width="@dimen/container_width"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corner_view"
-
-            android:maxLines="4"
-            android:paddingLeft="@dimen/tv_padding"
-            android:paddingTop="@dimen/tv_padding"
-            android:paddingRight="@dimen/tv_padding"
-            android:paddingBottom="@dimen/tv_bottom_padding"
-
-            android:text="@string/dummy_txt"
-            android:textColor="@color/txt_color_white"
-            android:textSize="@dimen/chat_txt_size" />
-
-        <ImageView
-            android:layout_width="@dimen/check_mrk_size"
-            android:layout_height="@dimen/check_mrk_size"
-            android:layout_marginEnd="@dimen/extra_end_padding"
-            android:src="@drawable/ic_outline_done_all_24"
-            android:layout_marginTop="@dimen/check_mark_margin_top"
-            app:tint="@color/white"
-            android:contentDescription="TODO" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="@dimen/extra_end_padding"
-            android:text="@string/_5_22"
-            android:textColor="@color/teal_700"
-            android:textSize="@dimen/check_mark_txt_size" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/cont3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/container_margin_top"
-        android:layout_marginStart="@dimen/container_margin_end"
-        android:orientation="vertical"
-        android:layout_gravity="start"
-        >
-
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="@dimen/container_width"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corner_view_white"
-
-            android:maxLines="4"
-            android:paddingLeft="@dimen/tv_padding"
-            android:paddingTop="@dimen/tv_padding"
-            android:paddingRight="@dimen/tv_padding"
-            android:paddingBottom="@dimen/tv_bottom_padding"
-
-            android:text="@string/dummy_txt"
-            android:textColor="@color/txt_color_white"
-            android:textSize="@dimen/chat_txt_size"
-            />
-
-        <ImageView
-            android:layout_width="@dimen/check_mrk_size"
-            android:layout_height="@dimen/check_mrk_size"
-            android:layout_marginEnd="@dimen/extra_end_padding"
-            android:src="@drawable/ic_outline_done_all_24"
-            android:layout_marginTop="@dimen/check_mark_margin_top"
-            app:tint="@color/white"
-            android:contentDescription="TODO" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/extra_end_padding"
-            android:text="@string/_6_22"
-            android:textColor="@color/teal_700"
-            android:textSize="@dimen/check_mark_txt_size"
-            android:layout_marginTop="10dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/cont4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/container_margin_top"
-        android:layout_marginEnd="@dimen/container_margin_end"
-        android:orientation="vertical"
-        android:gravity="end"
-        >
-
-        <TextView
-            android:id="@+id/tv3"
-            android:layout_width="@dimen/container_width"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corner_view"
-
-            android:maxLines="4"
-            android:paddingLeft="@dimen/tv_padding"
-            android:paddingTop="@dimen/tv_padding"
-            android:paddingRight="@dimen/tv_padding"
-            android:paddingBottom="@dimen/tv_bottom_padding"
-
-            android:text="@string/dummy_txt"
-            android:textColor="@color/txt_color_white"
-            android:textSize="@dimen/chat_txt_size" />
-
-        <ImageView
-            android:layout_width="@dimen/check_mrk_size"
-            android:layout_height="@dimen/check_mrk_size"
-            android:layout_marginTop="@dimen/check_mark_margin_top"
-            android:layout_marginEnd="@dimen/extra_end_padding"
-            android:src="@drawable/ic_outline_done_all_24"
-            app:tint="@color/white"
-            android:contentDescription="TODO" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/extra_end_padding"
-            android:text="@string/_6_22"
-            android:textColor="@color/teal_700"
-            android:textSize="@dimen/check_mark_txt_size"
-            android:layout_marginTop="10dp"/>
-    </LinearLayout>
-   
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cont5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom"
+        android:background="@drawable/fully_rounded_view_gray"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
 
-        <EditText
-            android:id="@+id/chat_edit_txt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/chat_txt_horizontal_margin"
-            android:layout_marginTop="@dimen/chat_txt_vertical_margin"
-            android:layout_marginEnd="@dimen/chat_txt_horizontal_margin"
-            android:layout_marginBottom="@dimen/chat_txt_vertical_margin"
-            android:background="@drawable/fully_rounded_view_gray"
-            android:gravity="start"
-            android:hint="@string/type_here"
-            android:paddingStart="@dimen/edit_txt_padding_start"
-            android:paddingEnd="@dimen/edit_txt_padding_start"
-            android:paddingTop="@dimen/edit_txt_padding_vertical"
-            android:paddingBottom="@dimen/edit_txt_padding_vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:autofillHints=""
-            android:inputType="text" />
 
         <ImageView
             android:id="@+id/sticker_icon"
             android:layout_width="@dimen/chat_img_width"
             android:layout_height="@dimen/chat_img_width"
             android:layout_marginStart="@dimen/chat_img_margin"
-            app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
-            app:layout_constraintStart_toStartOf="@+id/chat_edit_txt"
-            app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
-            app:srcCompat="@drawable/_1"
-            android:contentDescription="TODO" />
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/_1" />
+
+        <View
+            android:id="@+id/chat_edit_txt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:autofillHints=""
+            android:inputType="text" />
 
         <ImageView
             android:id="@+id/mic_icon"
             android:layout_width="@dimen/chat_img_width"
             android:layout_height="@dimen/chat_img_width"
             android:layout_marginEnd="@dimen/chat_img_margin"
-            app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
-            app:layout_constraintEnd_toEndOf="@+id/chat_edit_txt"
-            app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
-            app:srcCompat="@drawable/_3"
-            android:contentDescription="TODO" />
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/_3" />
 
         <ImageView
             android:id="@+id/attach_icon"
             android:layout_width="@dimen/chat_img_width"
             android:layout_height="@dimen/chat_img_width"
             android:layout_marginEnd="@dimen/chat_img_margin"
-            app:layout_constraintBottom_toBottomOf="@+id/chat_edit_txt"
-            app:layout_constraintEnd_toStartOf="@+id/mic_icon"
-            app:layout_constraintTop_toTopOf="@+id/chat_edit_txt"
-            app:srcCompat="@drawable/_2"
-            android:contentDescription="TODO" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/_2" />
+    </LinearLayout>
 
 
 </LinearLayout>
